@@ -1,0 +1,222 @@
+:root {
+    --DarkViolet: hsl(256, 26%, 20%);
+    --GrayishBlue: hsl(216, 30%, 68%);
+    --VeryDarkViolet: hsl(270, 9%, 17%);
+    --DarkGrayishViolet: hsl(273, 4%, 51%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --FontSize: 16px;
+    --FontHeadings: 'DM Serif Display';
+    --HeadingWeight: 400;
+    --FontBody: Karla;
+    --BodyWeight1: 400;
+    --BodyWeight2: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: var(--FontBody);
+    font-weight: var(--BodyWeight1);
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: var(--FontSize);
+}
+
+.btn-default {
+    border: 2px solid var(--VeryLightGray);
+    padding: 0.5rem 1.5rem !important;
+    text-transform: uppercase;
+    transition: all 0.25s;
+}
+
+.nav-link {
+    font-size: calc(0.5rem + 0.5vw);
+}
+
+nav {
+    background: white;
+    margin: 0 auto;
+}
+
+nav .nav-item {
+    padding: 0 0.5rem;
+}
+
+nav .nav-link {
+    color: var(--DarkGrayishViolet);
+    transition: all 0.25s;
+    text-transform: uppercase;
+}
+
+nav .nav-link:hover {
+    color: var(--DarkViolet);
+}
+
+nav .btn-default {
+    border: 2px solid var(--DarkViolet);
+    color: var(--DarkViolet);
+    transition: all o.25s;
+}
+
+nav .btn-default:hover {
+    background: var(--DarkViolet);
+    color: white;
+}
+
+h1,
+h3 {
+    font-family: var(--FontHeadings);
+    font-weight: 700;
+}
+
+.hero {
+    position: relative;
+    background: var(--DarkViolet);
+    padding: 5rem 7rem;
+    height: 100%;
+}
+
+.line-top {
+    margin-bottom: 3rem;
+    width: 200px;
+    height: 3px;
+    background: var(--VeryLightGray);
+}
+
+.hero-title {
+    color: var(--VeryLightGray);
+    padding: 1rem 0;
+}
+
+.hero .btn-default,
+.hero p {
+    color: var(--VeryLightGray);
+}
+
+.hero .hero-img {
+    position: absolute;
+}
+
+.lines-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.lines-bottom {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: 200;
+}
+
+.section-1 {
+    background: white;
+    padding: 8rem 7rem 7rem 7rem;
+}
+
+.content {
+    padding-top: 8rem;
+}
+
+.section-1 .line-top {
+    background: var(--DarkGrayishViolet);
+}
+
+.section-1 p {
+    color: var(--DarkGrayishViolet);
+}
+
+.section-icons {
+    padding: 2rem 0;
+}
+
+.section-2 {
+    margin: 6rem 0 3rem;
+    background: var(--DarkViolet);
+    padding: 4rem;
+    position: relative;
+}
+
+.section-2 div {
+    margin: auto 0;
+}
+
+.lines-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.section-2 .section-title {
+    color: var(--VeryLightGray);
+}
+
+.section-2 .btn-default {
+    color: var(--VeryLightGray);
+    z-index: 100;
+    position: relative;
+}
+
+.section-2 .btn-default:hover,
+.hero .btn-default:hover {
+    color: var(--DarkViolet);
+    background: var(--VeryLightGray);
+}
+
+.footer {
+    padding: 3rem 7rem;
+    background: var(--VeryLightGray);
+    position: relative;
+}
+
+.footer .row {
+    z-index: 100;
+    position: relative;
+}
+
+.lines-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.footer .social-link svg path {
+    fill: var(--DarkGrayishViolet);
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer h6 {
+    color: var(--DarkGrayishViolet);
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+.footer .nav-link {
+    padding: 0.3rem 0;
+    color: var(--DarkViolet);
+    text-transform: uppercase;
+    transition: all 0.25s;
+}
+
+.footer .nav-link:hover {
+    text-decoration: underline;
+}
